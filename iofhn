@@ -1,0 +1,10 @@
+        x_position = 30 * (i - 1)  # 窗口 x 坐标
+        y_position = 20 * (i - 1)  # 窗口 y 坐标
+        window_position = f'{x_position},{y_position}'  # 设置窗口位置
+    thread = threading.Thread(target=run_browser, args=(port, user_data_path, window_position, url))
+    thread.start()
+    return thread
+
+       x_position = 30 * (i - 1)  # 窗口 x 坐标
+        y_position = 20 * (i - 1)  # 窗口 y 坐标
+        window_position = f'{x_position},{y_position}' 
